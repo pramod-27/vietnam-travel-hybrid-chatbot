@@ -1,0 +1,482 @@
+2025-10-15 11:16:32 - hybrid_chatbot - INFO - Progress: 50/360 nodes created
+2025-10-15 11:16:36 - hybrid_chatbot - INFO - Progress: 100/360 nodes created
+2025-10-15 11:16:41 - hybrid_chatbot - INFO - Progress: 150/360 nodes created
+2025-10-15 11:16:45 - hybrid_chatbot - INFO - Progress: 200/360 nodes created
+2025-10-15 11:16:50 - hybrid_chatbot - INFO - Progress: 250/360 nodes created
+2025-10-15 11:16:54 - hybrid_chatbot - INFO - Progress: 300/360 nodes created
+2025-10-15 11:16:59 - hybrid_chatbot - INFO - Progress: 350/360 nodes created
+2025-10-15 11:20:23 - hybrid_chatbot - INFO - Connected to Neo4j
+2025-10-15 11:20:24 - hybrid_chatbot - INFO - Database cleared
+2025-10-15 11:20:25 - hybrid_chatbot - INFO - Constraints created
+2025-10-15 11:20:30 - hybrid_chatbot - INFO - Progress: 50/360 nodes created
+2025-10-15 11:20:36 - hybrid_chatbot - INFO - Progress: 100/360 nodes created
+2025-10-15 11:20:40 - hybrid_chatbot - INFO - Progress: 150/360 nodes created
+2025-10-15 11:20:46 - hybrid_chatbot - INFO - Progress: 200/360 nodes created
+2025-10-15 11:20:50 - hybrid_chatbot - INFO - Progress: 250/360 nodes created
+2025-10-15 11:20:55 - hybrid_chatbot - INFO - Progress: 300/360 nodes created
+2025-10-15 11:21:01 - hybrid_chatbot - INFO - Progress: 350/360 nodes created
+2025-10-15 11:21:02 - hybrid_chatbot - INFO - Successfully loaded 360 nodes
+2025-10-15 11:21:40 - hybrid_chatbot - INFO - Created 370 relationships
+2025-10-15 11:21:42 - hybrid_chatbot - INFO - Created 5950 SAME_CITY relationships
+2025-10-15 11:21:44 - hybrid_chatbot - INFO - Created 12728 SIMILAR_TAGS relationships
+2025-10-15 11:25:27 - hybrid_chatbot - INFO - Pinecone client initialized
+2025-10-15 11:25:29 - hybrid_chatbot - INFO - Index 'vietnam-travel-index' already exists
+2025-10-15 11:25:29 - hybrid_chatbot - INFO - Generated embeddings: 50/360
+2025-10-15 11:25:29 - hybrid_chatbot - INFO - Generated embeddings: 100/360
+2025-10-15 11:25:29 - hybrid_chatbot - INFO - Generated embeddings: 150/360
+2025-10-15 11:25:29 - hybrid_chatbot - INFO - Generated embeddings: 200/360
+2025-10-15 11:25:29 - hybrid_chatbot - INFO - Generated embeddings: 250/360
+2025-10-15 11:25:29 - hybrid_chatbot - INFO - Generated embeddings: 300/360
+2025-10-15 11:25:29 - hybrid_chatbot - INFO - Generated embeddings: 350/360
+2025-10-15 11:25:30 - hybrid_chatbot - INFO - Uploading 360 vectors in batches of 100...
+2025-10-15 11:25:34 - hybrid_chatbot - ERROR - Error uploading vectors: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 15 Oct 2025 05:55:33 GMT', 'Content-Type': 'application/json', 'Content-Length': '104', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '2257', 'x-pinecone-request-id': '7255595017598596916', 'x-envoy-upstream-service-time': '133', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 1536 does not match the dimension of the index 1024","details":[]}
+
+2025-10-15 11:25:34 - hybrid_chatbot - ERROR - Setup failed: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 15 Oct 2025 05:55:33 GMT', 'Content-Type': 'application/json', 'Content-Length': '104', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '2257', 'x-pinecone-request-id': '7255595017598596916', 'x-envoy-upstream-service-time': '133', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 1536 does not match the dimension of the index 1024","details":[]}
+
+2025-10-15 11:27:00 - hybrid_chatbot - INFO - Pinecone client initialized
+2025-10-15 11:27:03 - hybrid_chatbot - WARNING - Index has dimension 1024, need 1536
+2025-10-15 11:27:03 - hybrid_chatbot - INFO - Deleting and recreating index...
+2025-10-15 11:27:04 - hybrid_chatbot - INFO - Deleting existing index: vietnam-travel-index
+2025-10-15 11:27:12 - hybrid_chatbot - INFO - Index deleted successfully
+2025-10-15 11:27:12 - hybrid_chatbot - INFO - Creating index: vietnam-travel-index (dimension: 1536)
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Waiting for index to be ready...
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Index 'vietnam-travel-index' created successfully
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Generated embeddings: 50/360
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Generated embeddings: 100/360
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Generated embeddings: 150/360
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Generated embeddings: 200/360
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Generated embeddings: 250/360
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Generated embeddings: 300/360
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Generated embeddings: 350/360
+2025-10-15 11:27:17 - hybrid_chatbot - INFO - Uploading 360 vectors in batches of 100...
+2025-10-15 11:27:21 - hybrid_chatbot - INFO - Uploaded batch 1/4
+2025-10-15 11:27:23 - hybrid_chatbot - INFO - Uploaded batch 2/4
+2025-10-15 11:27:24 - hybrid_chatbot - INFO - Uploaded batch 3/4
+2025-10-15 11:27:25 - hybrid_chatbot - INFO - Uploaded batch 4/4
+2025-10-15 11:27:26 - hybrid_chatbot - INFO - Successfully uploaded 360 vectors
+2025-10-15 11:27:29 - hybrid_chatbot - INFO - Test query results:
+2025-10-15 11:31:37 - hybrid_chatbot - ERROR - Failed to initialize chatbot: type object 'Config' has no attribute 'EMBEDDING_DIMENSION'
+2025-10-15 15:48:41 - hybrid_chatbot - ERROR - Failed to initialize chatbot: type object 'Config' has no attribute 'EMBEDDING_DIMENSION'
+2025-10-15 15:50:13 - hybrid_chatbot - INFO - ChatService using OpenRouter: meta-llama/llama-3.2-3b-instruct:free
+2025-10-15 15:50:15 - hybrid_chatbot - INFO - ChatService initialized with OpenRouter
+2025-10-15 15:50:15 - hybrid_chatbot - INFO - VietnamTravelChatbot initialized successfully
+2025-10-15 15:50:59 - hybrid_chatbot - INFO - Processing query: romantic places in Vietnam
+2025-10-15 15:50:59 - hybrid_chatbot - DEBUG - Generated MOCK embedding of dimension: 1536
+2025-10-15 15:51:02 - hybrid_chatbot - INFO - Found 5 vector matches
+2025-10-15 15:51:03 - hybrid_chatbot - INFO - Enriched 5 results with graph data
+2025-10-15 15:51:08 - hybrid_chatbot - INFO - Generated response using OpenRouter
+2025-10-15 15:52:12 - hybrid_chatbot - INFO - Neo4j connection closed
+2025-10-15 15:52:12 - hybrid_chatbot - INFO - Connections closed
+2025-10-15 20:17:33 - hybrid_chatbot - INFO - Index 'vietnam-travel-index' already exists
+2025-10-15 20:17:33 - hybrid_chatbot - INFO - Generating embeddings for 360 items...
+2025-10-15 20:17:40 - hybrid_chatbot - ERROR - Error generating batch embeddings: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-10-15 20:17:40 - hybrid_chatbot - ERROR - Setup failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-10-15 20:20:03 - hybrid_chatbot - ERROR - Failed to initialize chatbot: 'str' object has no attribute 'data'
+2025-10-15 20:21:02 - hybrid_chatbot - INFO - ChatService using OpenRouter: meta-llama/llama-3.2-3b-instruct:free
+2025-10-15 20:21:04 - hybrid_chatbot - INFO - ChatService initialized with OpenRouter
+2025-10-15 20:21:04 - hybrid_chatbot - INFO - VietnamTravelChatbot initialized successfully
+2025-10-15 20:21:10 - hybrid_chatbot - INFO - Processing query: hi
+2025-10-15 20:21:10 - hybrid_chatbot - DEBUG - Generated MOCK embedding of dimension: 1536
+2025-10-15 20:21:14 - hybrid_chatbot - INFO - Found 5 vector matches
+2025-10-15 20:21:15 - hybrid_chatbot - INFO - Enriched 5 results with graph data
+2025-10-15 20:21:17 - hybrid_chatbot - INFO - Generated response using OpenRouter
+2025-10-15 20:21:32 - hybrid_chatbot - INFO - Neo4j connection closed
+2025-10-15 20:21:32 - hybrid_chatbot - INFO - Connections closed
+2025-10-15 21:50:04 - hybrid_chatbot - INFO - ChatService using OpenRouter: x-ai/grok-code-fast-1
+2025-10-15 21:50:09 - hybrid_chatbot - INFO - ChatService initialized with OpenRouter
+2025-10-15 21:50:09 - hybrid_chatbot - INFO - VietnamTravelChatbot initialized successfully
+2025-10-15 21:50:47 - hybrid_chatbot - INFO - Processing query: create a romantic 4 day itinerary for Vietnam
+2025-10-15 21:50:47 - hybrid_chatbot - DEBUG - Generated MOCK embedding of dimension: 1536
+2025-10-15 21:50:50 - hybrid_chatbot - INFO - Found 5 vector matches
+2025-10-15 21:50:51 - hybrid_chatbot - INFO - Enriched 5 results with graph data
+2025-10-15 21:51:01 - hybrid_chatbot - INFO - Generated response using OpenRouter
+2025-10-15 21:51:39 - hybrid_chatbot - INFO - Neo4j connection closed
+2025-10-15 21:51:39 - hybrid_chatbot - INFO - Connections closed
+2025-10-16 20:05:37 - hybrid_chatbot - INFO - Pinecone client initialized
+2025-10-16 20:05:39 - hybrid_chatbot - WARNING - Index has dimension 1536, need 768
+2025-10-16 20:05:39 - hybrid_chatbot - INFO - Deleting and recreating index...
+2025-10-16 20:05:41 - hybrid_chatbot - INFO - Deleting existing index: vietnam-travel-index
+2025-10-16 20:05:55 - hybrid_chatbot - INFO - Index deleted successfully
+2025-10-16 20:05:55 - hybrid_chatbot - INFO - Creating index: vietnam-travel-index (dimension: 768)
+2025-10-16 20:05:59 - hybrid_chatbot - INFO - Waiting for index to be ready...
+2025-10-16 20:06:00 - hybrid_chatbot - INFO - Index 'vietnam-travel-index' created successfully
+2025-10-16 20:06:01 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:01 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:02 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:02 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:03 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:03 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:04 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:04 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:04 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:05 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:05 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:06 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:06 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:07 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:07 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:07 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:08 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:08 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:09 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:09 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:10 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:10 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:10 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:11 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:11 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:12 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:12 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:12 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:13 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:13 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:14 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:14 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:14 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:15 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:15 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:16 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:16 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:16 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:17 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:17 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:18 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:18 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:18 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:19 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:19 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:06:20 - hybrid_chatbot - WARNING - Real embedding failed, using mock: 'str' object has no attribute 'data'
+2025-10-16 20:17:26 - hybrid_chatbot - INFO - Pinecone client initialized
+2025-10-16 20:17:30 - hybrid_chatbot - INFO - Index 'vietnam-travel-index' already exists with correct dimensions
+2025-10-16 20:18:07 - hybrid_chatbot - INFO - Generated embeddings: 50/360
+2025-10-16 20:18:43 - hybrid_chatbot - INFO - Generated embeddings: 100/360
+2025-10-16 20:19:19 - hybrid_chatbot - INFO - Generated embeddings: 150/360
+2025-10-16 20:19:55 - hybrid_chatbot - INFO - Generated embeddings: 200/360
+2025-10-16 20:20:32 - hybrid_chatbot - INFO - Generated embeddings: 250/360
+2025-10-16 20:21:08 - hybrid_chatbot - INFO - Generated embeddings: 300/360
+2025-10-16 20:21:44 - hybrid_chatbot - INFO - Generated embeddings: 350/360
+2025-10-16 20:21:51 - hybrid_chatbot - INFO - Uploading 360 vectors in batches of 100...
+2025-10-16 20:21:55 - hybrid_chatbot - INFO - Uploaded batch 1/4
+2025-10-16 20:21:56 - hybrid_chatbot - INFO - Uploaded batch 2/4
+2025-10-16 20:21:57 - hybrid_chatbot - INFO - Uploaded batch 3/4
+2025-10-16 20:21:59 - hybrid_chatbot - INFO - Uploaded batch 4/4
+2025-10-16 20:21:59 - hybrid_chatbot - INFO - Successfully uploaded 360 vectors
+2025-10-16 20:22:02 - hybrid_chatbot - INFO - Test query results:
+2025-10-16 20:30:18 - hybrid_chatbot - INFO - Connected to Neo4j
+2025-10-16 20:30:21 - hybrid_chatbot - INFO - Database cleared
+2025-10-16 20:30:22 - hybrid_chatbot - INFO - Constraints created
+2025-10-16 20:31:00 - hybrid_chatbot - INFO - Successfully loaded 360 nodes
+2025-10-16 20:31:38 - hybrid_chatbot - INFO - Created 370 relationships
+2025-10-16 20:31:39 - hybrid_chatbot - INFO - Created 0 SAME_CITY relationships
+2025-10-16 20:31:39 - hybrid_chatbot - INFO - Created 0 SIMILAR_TAGS relationships
+2025-10-16 20:31:40 - hybrid_chatbot - ERROR - Setup failed: 'cities'
+2025-10-16 20:35:47 - hybrid_chatbot - INFO - Connected to Neo4j
+2025-10-16 20:35:48 - hybrid_chatbot - INFO - Database cleared
+2025-10-16 20:35:49 - hybrid_chatbot - INFO - Constraints created
+2025-10-16 20:35:54 - hybrid_chatbot - INFO - Progress: 50/360 nodes created
+2025-10-16 20:35:59 - hybrid_chatbot - INFO - Progress: 100/360 nodes created
+2025-10-16 20:36:04 - hybrid_chatbot - INFO - Progress: 150/360 nodes created
+2025-10-16 20:36:09 - hybrid_chatbot - INFO - Progress: 200/360 nodes created
+2025-10-16 20:36:14 - hybrid_chatbot - INFO - Progress: 250/360 nodes created
+2025-10-16 20:36:19 - hybrid_chatbot - INFO - Progress: 300/360 nodes created
+2025-10-16 20:36:24 - hybrid_chatbot - INFO - Progress: 350/360 nodes created
+2025-10-16 20:36:25 - hybrid_chatbot - INFO - Successfully loaded 360 nodes
+2025-10-16 20:37:03 - hybrid_chatbot - INFO - Created 370 relationships
+2025-10-16 20:37:04 - hybrid_chatbot - INFO - Created 5950 SAME_CITY relationships
+2025-10-16 20:37:05 - hybrid_chatbot - INFO - Created 12728 SIMILAR_TAGS relationships
+2025-10-16 20:38:47 - hybrid_chatbot - INFO - Connected to Neo4j
+2025-10-16 20:38:49 - hybrid_chatbot - INFO - Database cleared
+2025-10-16 20:38:50 - hybrid_chatbot - INFO - Constraints created
+2025-10-16 20:39:32 - hybrid_chatbot - INFO - Successfully loaded 360 nodes
+2025-10-16 20:40:15 - hybrid_chatbot - INFO - Created 370 relationships
+2025-10-16 20:40:15 - hybrid_chatbot - INFO - Created 5950 SAME_CITY relationships
+2025-10-16 20:40:16 - hybrid_chatbot - INFO - Created 12728 SIMILAR_TAGS relationships
+2025-10-16 20:40:17 - hybrid_chatbot - ERROR - Setup failed: 'cities'
+2025-10-16 20:43:49 - hybrid_chatbot - INFO - Connected to Neo4j
+2025-10-16 20:43:51 - hybrid_chatbot - INFO - Database cleared
+2025-10-16 20:43:52 - hybrid_chatbot - INFO - Constraints created
+2025-10-16 20:44:28 - hybrid_chatbot - INFO - Successfully loaded 360 nodes
+2025-10-16 20:45:06 - hybrid_chatbot - INFO - Created 370 relationships
+2025-10-16 20:45:07 - hybrid_chatbot - INFO - Created 5950 SAME_CITY relationships
+2025-10-16 20:45:08 - hybrid_chatbot - INFO - Created 12728 SIMILAR_TAGS relationships
+2025-10-16 20:45:09 - hybrid_chatbot - ERROR - Setup failed: 'cities'
+2025-10-16 20:47:31 - hybrid_chatbot - INFO - Connected to Neo4j
+2025-10-16 20:47:34 - hybrid_chatbot - INFO - Database cleared
+2025-10-16 20:47:34 - hybrid_chatbot - INFO - Constraints created
+2025-10-16 20:48:11 - hybrid_chatbot - INFO - Successfully loaded 360 nodes
+2025-10-16 20:48:49 - hybrid_chatbot - INFO - Created 370 relationships
+2025-10-16 20:48:50 - hybrid_chatbot - INFO - Created 5950 SAME_CITY relationships
+2025-10-16 20:48:51 - hybrid_chatbot - INFO - Created 12728 SIMILAR_TAGS relationships
+2025-10-16 20:48:52 - hybrid_chatbot - ERROR - Setup failed: 'cities'
+2025-10-16 20:49:35 - hybrid_chatbot - INFO - Connected to Neo4j
+2025-10-16 20:49:37 - hybrid_chatbot - INFO - Database cleared
+2025-10-16 20:49:37 - hybrid_chatbot - INFO - Constraints created
+2025-10-16 20:49:43 - hybrid_chatbot - INFO - Progress: 50/360 nodes created
+2025-10-16 20:49:48 - hybrid_chatbot - INFO - Progress: 100/360 nodes created
+2025-10-16 20:49:53 - hybrid_chatbot - INFO - Progress: 150/360 nodes created
+2025-10-16 20:49:58 - hybrid_chatbot - INFO - Progress: 200/360 nodes created
+2025-10-16 20:50:03 - hybrid_chatbot - INFO - Progress: 250/360 nodes created
+2025-10-16 20:50:09 - hybrid_chatbot - INFO - Progress: 300/360 nodes created
+2025-10-16 20:50:14 - hybrid_chatbot - INFO - Progress: 350/360 nodes created
+2025-10-16 20:50:15 - hybrid_chatbot - INFO - Successfully loaded 360 nodes
+2025-10-16 20:50:53 - hybrid_chatbot - INFO - Created 370 relationships
+2025-10-16 20:50:54 - hybrid_chatbot - INFO - Created 5950 SAME_CITY relationships
+2025-10-16 20:50:55 - hybrid_chatbot - INFO - Created 12728 SIMILAR_TAGS relationships
+2025-10-16 20:55:13 - hybrid_chatbot - INFO - ChatService using OpenRouter: x-ai/grok-code-fast-1
+2025-10-16 20:55:17 - hybrid_chatbot - INFO - ChatService initialized with OpenRouter
+2025-10-16 20:55:28 - hybrid_chatbot - INFO - Generated response using OpenRouter
+2025-10-16 20:56:16 - hybrid_chatbot - INFO - Testing OpenAI embeddings with model: text-embedding-3-small
+2025-10-16 20:56:22 - hybrid_chatbot - ERROR - OpenAI API Quota Exceeded!
+2025-10-16 20:56:22 - hybrid_chatbot - ERROR - Consider using Google Gemini instead (FREE!)
+2025-10-16 20:56:22 - hybrid_chatbot - WARNING - All API providers failed. Using mock embeddings.
+2025-10-16 20:56:22 - hybrid_chatbot - INFO - EmbeddingService initialized in MOCK mode (deterministic hash-based)
+2025-10-16 20:56:22 - hybrid_chatbot - WARNING - To use real embeddings, set up Google Gemini (FREE!):
+2025-10-16 20:56:22 - hybrid_chatbot - WARNING -   1. Get API key: https://makersuite.google.com/app/apikey
+2025-10-16 20:56:22 - hybrid_chatbot - WARNING -   2. Update .env: USE_GOOGLE_EMBEDDINGS=true
+2025-10-16 20:56:22 - hybrid_chatbot - WARNING -   3. Update .env: GOOGLE_API_KEY=your-key
+2025-10-16 20:56:22 - hybrid_chatbot - WARNING -   4. Update .env: VECTOR_DIMENSION=768
+2025-10-16 20:56:22 - hybrid_chatbot - WARNING -   5. Re-run: python scripts/setup_pinecone.py
+2025-10-16 20:56:23 - hybrid_chatbot - INFO - ChatService using OpenRouter: x-ai/grok-code-fast-1
+2025-10-16 20:56:27 - hybrid_chatbot - INFO - ChatService initialized with OpenRouter
+2025-10-16 20:56:27 - hybrid_chatbot - INFO - VietnamTravelChatbot initialized successfully
+2025-10-16 20:57:52 - hybrid_chatbot - INFO - Neo4j connection closed
+2025-10-16 20:57:52 - hybrid_chatbot - INFO - Connections closed
+2025-10-16 20:57:56 - hybrid_chatbot - INFO - Testing OpenAI embeddings with model: text-embedding-3-small
+2025-10-16 20:58:01 - hybrid_chatbot - ERROR - OpenAI API Quota Exceeded!
+2025-10-16 20:58:01 - hybrid_chatbot - ERROR - Consider using Google Gemini instead (FREE!)
+2025-10-16 20:58:01 - hybrid_chatbot - WARNING - All API providers failed. Using mock embeddings.
+2025-10-16 20:58:01 - hybrid_chatbot - INFO - EmbeddingService initialized in MOCK mode (deterministic hash-based)
+2025-10-16 20:58:01 - hybrid_chatbot - WARNING - To use real embeddings, set up Google Gemini (FREE!):
+2025-10-16 20:58:01 - hybrid_chatbot - WARNING -   1. Get API key: https://makersuite.google.com/app/apikey
+2025-10-16 20:58:01 - hybrid_chatbot - WARNING -   2. Update .env: USE_GOOGLE_EMBEDDINGS=true
+2025-10-16 20:58:01 - hybrid_chatbot - WARNING -   3. Update .env: GOOGLE_API_KEY=your-key
+2025-10-16 20:58:01 - hybrid_chatbot - WARNING -   4. Update .env: VECTOR_DIMENSION=768
+2025-10-16 20:58:01 - hybrid_chatbot - WARNING -   5. Re-run: python scripts/setup_pinecone.py
+2025-10-16 20:58:03 - hybrid_chatbot - INFO - ChatService using OpenRouter: x-ai/grok-code-fast-1
+2025-10-16 20:58:05 - hybrid_chatbot - INFO - ChatService initialized with OpenRouter
+2025-10-16 20:58:05 - hybrid_chatbot - INFO - VietnamTravelChatbot initialized successfully
+2025-10-16 20:58:09 - hybrid_chatbot - INFO - Processing query: create a romantic 4 day itinerary for Vietnam
+2025-10-16 20:58:09 - hybrid_chatbot - DEBUG - Generated MOCK embedding of dimension: 768
+2025-10-16 20:58:12 - hybrid_chatbot - INFO - Found 5 vector matches
+2025-10-16 20:58:13 - hybrid_chatbot - INFO - Enriched 5 results with graph data
+2025-10-16 20:58:27 - hybrid_chatbot - INFO - Generated response using OpenRouter
+2025-10-16 20:59:26 - hybrid_chatbot - INFO - Neo4j connection closed
+2025-10-16 20:59:26 - hybrid_chatbot - INFO - Connections closed
+2025-10-16 21:04:49 - hybrid_chatbot - INFO - Testing OpenAI embeddings with model: text-embedding-3-small
+2025-10-16 21:04:54 - hybrid_chatbot - ERROR - OpenAI API Quota Exceeded!
+2025-10-16 21:04:54 - hybrid_chatbot - ERROR - Consider using Google Gemini instead (FREE!)
+2025-10-16 21:04:54 - hybrid_chatbot - WARNING - All API providers failed. Using mock embeddings.
+2025-10-16 21:04:54 - hybrid_chatbot - INFO - EmbeddingService initialized in MOCK mode (deterministic hash-based)
+2025-10-16 21:04:54 - hybrid_chatbot - WARNING - To use real embeddings, set up Google Gemini (FREE!):
+2025-10-16 21:04:54 - hybrid_chatbot - WARNING -   1. Get API key: https://makersuite.google.com/app/apikey
+2025-10-16 21:04:54 - hybrid_chatbot - WARNING -   2. Update .env: USE_GOOGLE_EMBEDDINGS=true
+2025-10-16 21:04:54 - hybrid_chatbot - WARNING -   3. Update .env: GOOGLE_API_KEY=your-key
+2025-10-16 21:04:54 - hybrid_chatbot - WARNING -   4. Update .env: VECTOR_DIMENSION=768
+2025-10-16 21:04:54 - hybrid_chatbot - WARNING -   5. Re-run: python scripts/setup_pinecone.py
+2025-10-16 21:04:56 - hybrid_chatbot - INFO - ChatService using OpenRouter: x-ai/grok-code-fast-1
+2025-10-16 21:05:00 - hybrid_chatbot - INFO - ChatService initialized with OpenRouter
+2025-10-16 21:05:00 - hybrid_chatbot - INFO - VietnamTravelChatbot initialized successfully
+2025-10-16 21:05:18 - hybrid_chatbot - INFO - Neo4j connection closed
+2025-10-16 21:05:18 - hybrid_chatbot - INFO - Neo4j connection closed
+2025-10-17 10:55:40,906 | INFO    | hybrid_travel | Config validated
+2025-10-17 10:55:42,160 | INFO    | hybrid_travel | Initialized Google embeddings
+2025-10-17 10:55:43,060 | INFO    | hybrid_travel | Embeddings OK (len=768) - provider: {'provider': 'google', 'dimension': 768, 'is_mock': False}
+2025-10-17 10:55:43,060 | INFO    | hybrid_travel | VectorService initialized
+2025-10-17 10:55:44,350 | INFO    | hybrid_travel | Pinecone index access OK
+2025-10-17 10:55:44,350 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 10:55:45,996 | INFO    | hybrid_travel | Neo4j test OK (retrieved 0 nodes)
+2025-10-17 10:55:46,013 | INFO    | hybrid_travel | ChatService configured for OpenRouter
+2025-10-17 10:55:48,921 | ERROR   | hybrid_travel | Chat generation failed: Connection error.
+2025-10-17 10:55:48,923 | INFO    | hybrid_travel | Chat test OK: Sorry — I couldn't generate an answer right now.
+2025-10-17 11:05:10,121 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 11:05:12,920 | INFO    | hybrid_travel | Index already exists and matches dimension.
+2025-10-17 11:12:43,371 | INFO    | hybrid_travel | Loading dataset
+2025-10-17 11:12:43,371 | INFO    | hybrid_travel | Loaded 360 items from data\vietnam_travel_dataset.json
+2025-10-17 11:12:43,994 | INFO    | hybrid_travel | Initialized Google embeddings
+2025-10-17 11:12:43,994 | INFO    | hybrid_travel | Using embedding provider: {'provider': 'google', 'dimension': 768, 'is_mock': False}
+2025-10-17 11:13:01,162 | INFO    | hybrid_travel | Prepared 50/360 vectors
+2025-10-17 11:13:16,621 | INFO    | hybrid_travel | Prepared 100/360 vectors
+2025-10-17 11:13:32,195 | INFO    | hybrid_travel | Prepared 150/360 vectors
+2025-10-17 11:13:48,475 | INFO    | hybrid_travel | Prepared 200/360 vectors
+2025-10-17 11:14:05,953 | INFO    | hybrid_travel | Prepared 250/360 vectors
+2025-10-17 11:14:20,487 | INFO    | hybrid_travel | Prepared 300/360 vectors
+2025-10-17 11:14:38,970 | INFO    | hybrid_travel | Prepared 350/360 vectors
+2025-10-17 11:14:40,752 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 11:14:43,098 | INFO    | hybrid_travel | Index already exists and matches dimension.
+2025-10-17 11:14:43,099 | INFO    | hybrid_travel | Uploading 360 vectors to Pinecone in batches of 100
+2025-10-17 11:14:46,290 | INFO    | hybrid_travel | Upserted batch 1 (100 vectors)
+2025-10-17 11:14:47,317 | INFO    | hybrid_travel | Upserted batch 2 (100 vectors)
+2025-10-17 11:14:48,215 | INFO    | hybrid_travel | Upserted batch 3 (100 vectors)
+2025-10-17 11:14:48,965 | INFO    | hybrid_travel | Upserted batch 4 (60 vectors)
+2025-10-17 11:14:49,167 | INFO    | hybrid_travel | Upload complete
+2025-10-17 11:14:49,167 | INFO    | hybrid_travel | Couldn't fetch index describe info
+2025-10-17 11:14:50,858 | INFO    | hybrid_travel | Sample query returned 5 matches
+2025-10-17 11:14:50,858 | INFO    | hybrid_travel |  - Hoi An Attraction 143 (Attraction) score=0.749424636
+2025-10-17 11:14:50,860 | INFO    | hybrid_travel |  - Hoi An Attraction 150 (Attraction) score=0.749424636
+2025-10-17 11:14:50,860 | INFO    | hybrid_travel |  - Hoi An Attraction 152 (Attraction) score=0.749424636
+2025-10-17 11:14:50,860 | INFO    | hybrid_travel |  - Hoi An Attraction 144 (Attraction) score=0.749424636
+2025-10-17 11:14:50,860 | INFO    | hybrid_travel |  - Da Lat Attraction 247 (Attraction) score=0.745167553
+2025-10-17 11:50:48,307 | INFO    | hybrid_travel | Loaded 360 items from dataset
+2025-10-17 11:51:02,959 | INFO    | hybrid_travel | Inserted 100/360 nodes
+2025-10-17 11:51:12,775 | INFO    | hybrid_travel | Inserted 200/360 nodes
+2025-10-17 11:51:22,329 | INFO    | hybrid_travel | Inserted 300/360 nodes
+2025-10-17 11:57:40,339 | INFO    | hybrid_travel | Config validated
+2025-10-17 11:57:41,099 | INFO    | hybrid_travel | Initialized Google embeddings
+2025-10-17 11:57:41,099 | INFO    | hybrid_travel | Embeddings OK (len=768) - provider: {'provider': 'google', 'dimension': 768, 'is_mock': False}
+2025-10-17 11:57:41,099 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 11:57:42,382 | INFO    | hybrid_travel | Pinecone index access OK
+2025-10-17 11:57:42,382 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 11:57:43,884 | INFO    | hybrid_travel | Neo4j test OK (retrieved 0 nodes)
+2025-10-17 11:57:43,896 | INFO    | hybrid_travel | ChatService configured for OpenRouter
+2025-10-17 11:57:46,726 | ERROR   | hybrid_travel | Chat generation failed: Connection error.
+2025-10-17 11:57:46,726 | INFO    | hybrid_travel | Chat test OK: Sorry — I couldn't generate an answer right now.
+2025-10-17 12:00:26,710 | INFO    | hybrid_travel | Initialized Google embeddings
+2025-10-17 12:00:26,710 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 12:00:26,713 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 12:00:26,721 | INFO    | hybrid_travel | ChatService configured for OpenRouter
+2025-10-17 12:00:39,602 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 12:00:42,549 | ERROR   | hybrid_travel | Chat generation failed: Connection error.
+2025-10-17 12:01:48,969 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 12:01:51,478 | ERROR   | hybrid_travel | Chat generation failed: Connection error.
+2025-10-17 12:10:31,678 | INFO    | hybrid_travel | Initialized Google embeddings
+2025-10-17 12:10:31,678 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 12:10:31,678 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 12:10:31,692 | INFO    | hybrid_travel | ChatService configured for OpenRouter
+2025-10-17 12:10:47,375 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 12:10:50,349 | ERROR   | hybrid_travel | Chat generation failed: Connection error.
+2025-10-17 12:16:09,229 | INFO    | hybrid_travel | Initialized Google embeddings
+2025-10-17 12:16:09,230 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 12:16:09,230 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 12:16:09,240 | INFO    | hybrid_travel | ChatService configured for OpenRouter
+2025-10-17 12:16:26,535 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 12:16:29,426 | ERROR   | hybrid_travel | Chat generation failed: Connection error.
+2025-10-17 12:18:39,191 | INFO    | hybrid_travel | ChatService using OpenRouter: anthropic/claude-3.5-sonnet
+2025-10-17 12:18:41,749 | ERROR   | hybrid_travel | ChatService initialization failed: Connection error.
+2025-10-17 12:18:41,751 | WARNING | hybrid_travel | Falling back to mock mode
+2025-10-17 12:18:52,150 | INFO    | hybrid_travel | Initialized Google embeddings
+2025-10-17 12:18:52,150 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 12:18:52,150 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 12:18:52,165 | INFO    | hybrid_travel | ChatService using OpenRouter: anthropic/claude-3.5-sonnet
+2025-10-17 12:18:54,709 | ERROR   | hybrid_travel | ChatService initialization failed: Connection error.
+2025-10-17 12:18:54,710 | WARNING | hybrid_travel | Falling back to mock mode
+2025-10-17 12:19:30,763 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 12:23:09,097 | INFO    | hybrid_travel | Initialized Google embeddings
+2025-10-17 12:23:09,097 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 12:23:09,097 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 12:23:09,113 | INFO    | hybrid_travel | ChatService using OpenRouter: openai/gpt-4o-mini
+2025-10-17 12:23:11,827 | ERROR   | hybrid_travel | ChatService initialization failed: Connection error.
+2025-10-17 12:23:11,831 | WARNING | hybrid_travel | Falling back to mock mode
+2025-10-17 12:23:38,856 | INFO    | hybrid_travel | Initialized Google embeddings
+2025-10-17 12:23:38,856 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 12:23:38,856 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 12:23:38,866 | INFO    | hybrid_travel | ChatService configured for OpenRouter
+2025-10-17 12:24:00,409 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 12:24:03,151 | ERROR   | hybrid_travel | Chat generation failed: Connection error.
+2025-10-17 12:41:54,765 | INFO    | hybrid_travel | Testing OpenRouter connection...
+2025-10-17 12:41:56,686 | INFO    | hybrid_travel | Generating response with openrouter (model: openai/gpt-4o-mini)
+2025-10-17 12:42:27,614 | INFO    | hybrid_travel | Initialized OpenAI embeddings
+2025-10-17 12:42:27,614 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 12:42:27,614 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 12:42:27,614 | INFO    | hybrid_travel | Testing OpenRouter connection...
+2025-10-17 12:42:49,821 | ERROR   | hybrid_travel | Embedding API failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}; falling back to mock
+2025-10-17 12:42:55,741 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 12:42:55,741 | INFO    | hybrid_travel | Generating response with openrouter (model: openai/gpt-4o-mini)
+2025-10-17 12:43:31,424 | INFO    | hybrid_travel | Initialized OpenAI embeddings
+2025-10-17 12:43:31,424 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 12:43:31,424 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 12:43:31,439 | INFO    | hybrid_travel | Testing OpenRouter connection...
+2025-10-17 12:43:56,282 | ERROR   | hybrid_travel | Embedding API failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}; falling back to mock
+2025-10-17 12:44:01,877 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 12:44:01,877 | INFO    | hybrid_travel | Generating response with openrouter (model: meta-llama/llama-3.2-3b-instruct:free)
+2025-10-17 12:50:08,543 | INFO    | hybrid_travel | Initialized OpenAI embeddings
+2025-10-17 12:50:08,543 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 12:50:08,543 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 12:50:09,224 | INFO    | hybrid_travel | Testing Google Gemini connection...
+2025-10-17 12:50:10,046 | ERROR   | hybrid_travel | Google Gemini initialization failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-17 12:50:10,060 | INFO    | hybrid_travel | Testing OpenRouter connection...
+2025-10-17 12:50:41,706 | ERROR   | hybrid_travel | Embedding API failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}; falling back to mock
+2025-10-17 12:50:47,369 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 12:50:47,369 | INFO    | hybrid_travel | Generating response with openrouter
+2025-10-17 12:50:47,369 | INFO    | hybrid_travel |   Model: meta-llama/llama-3.2-3b-instruct:free
+2025-10-17 12:50:47,369 | INFO    | hybrid_travel |   Messages: 3
+2025-10-17 12:50:47,369 | INFO    | hybrid_travel |   Context items: 5
+2025-10-17 12:50:47,369 | INFO    | hybrid_travel |   Max tokens: 1500
+2025-10-17 13:00:34,014 | INFO    | hybrid_travel | Loaded 225 cached embeddings
+2025-10-17 13:00:34,016 | INFO    | hybrid_travel | Initializing Google Embeddings...
+2025-10-17 13:00:34,916 | INFO    | hybrid_travel | Google Embeddings ready (dim=768)
+2025-10-17 13:01:05,001 | INFO    | hybrid_travel | Loaded 225 cached embeddings
+2025-10-17 13:01:05,001 | INFO    | hybrid_travel | Initializing Google Embeddings...
+2025-10-17 13:01:05,841 | INFO    | hybrid_travel | Google Embeddings ready (dim=768)
+2025-10-17 13:01:05,841 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 13:01:05,841 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 13:01:05,847 | INFO    | hybrid_travel | Testing Google Gemini connection...
+2025-10-17 13:01:06,387 | ERROR   | hybrid_travel | Google Gemini initialization failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-17 13:01:06,408 | INFO    | hybrid_travel | Testing OpenRouter connection...
+2025-10-17 13:09:07,202 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 13:09:07,204 | INFO    | hybrid_travel | Generating response with openrouter
+2025-10-17 13:09:07,204 | INFO    | hybrid_travel |   Model: meta-llama/llama-3.2-3b-instruct:free
+2025-10-17 13:09:07,204 | INFO    | hybrid_travel |   Messages: 3
+2025-10-17 13:09:07,204 | INFO    | hybrid_travel |   Context items: 5
+2025-10-17 13:09:07,204 | INFO    | hybrid_travel |   Max tokens: 1500
+2025-10-17 13:13:17,297 | INFO    | hybrid_travel | Loaded 225 cached embeddings
+2025-10-17 13:13:17,298 | INFO    | hybrid_travel | Initializing Google Embeddings...
+2025-10-17 13:13:18,181 | INFO    | hybrid_travel | Google Embeddings ready (dim=768)
+2025-10-17 13:13:18,183 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 13:13:18,184 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 13:13:20,271 | INFO    | hybrid_travel | ChatService ready - OpenRouter (meta-llama/llama-3.2-3b-instruct:free)
+2025-10-17 13:14:02,665 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 13:14:02,667 | INFO    | hybrid_travel | Generating response (model: meta-llama/llama-3.2-3b-instruct:free, context: 5 items)
+2025-10-17 13:14:17,788 | INFO    | hybrid_travel | Response complete (3402 chars)
+2025-10-17 13:49:41,117 | INFO    | hybrid_travel | Loaded 225 cached embeddings
+2025-10-17 13:49:41,117 | INFO    | hybrid_travel | Initializing Google Embeddings...
+2025-10-17 13:49:41,869 | INFO    | hybrid_travel | Google Embeddings ready (dim=768)
+2025-10-17 13:49:41,874 | INFO    | hybrid_travel | VectorService connected. Index=vietnam-travel-index
+2025-10-17 13:49:41,874 | INFO    | hybrid_travel | Connected to Neo4j
+2025-10-17 13:49:45,110 | INFO    | hybrid_travel | ChatService ready - OpenRouter (meta-llama/llama-3.2-3b-instruct:free)
+2025-10-17 13:49:55,493 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-17 13:57:34,830 | INFO    | hybrid_travel | Google Embeddings ready (dim=768)
+2025-10-17 14:00:49,328 | INFO    | hybrid_travel | Enriched 5 vector results with graph data
+2025-10-19 14:36:25,895 | INFO    | hybrid_travel | Config validated
+2025-10-19 14:36:26,841 | INFO    | hybrid_travel | Embeddings OK (len=768) - provider: {'provider': 'google', 'model': 'models/text-embedding-004', 'dimension': 768, 'cache_size': 225}
+2025-10-19 14:36:27,950 | INFO    | hybrid_travel | Pinecone index access OK
+2025-10-19 14:36:29,334 | INFO    | hybrid_travel | Neo4j test OK (retrieved 0 nodes)
+2025-10-19 14:36:36,201 | INFO    | hybrid_travel | Chat test OK: Xin chào! (Hello!) It's a pleasure to assist you with planning your trip to Viet
+2025-10-19 14:40:17,929 | INFO    | hybrid_travel | Config validated
+2025-10-19 14:40:18,779 | INFO    | hybrid_travel | Embeddings OK (len=768) - provider: {'provider': 'google', 'model': 'models/text-embedding-004', 'dimension': 768, 'cache_size': 225}
+2025-10-19 14:40:20,086 | INFO    | hybrid_travel | Pinecone index access OK
+2025-10-19 14:40:21,484 | INFO    | hybrid_travel | Neo4j test OK (retrieved 0 nodes)
+2025-10-19 14:40:29,262 | INFO    | hybrid_travel | Chat test OK: Xin chào! (Hello!) It's lovely to meet you. I'm excited to help plan your trip t
+2025-10-20 11:28:46,591 | INFO    | hybrid_travel | Loading dataset
+2025-10-20 11:28:46,607 | INFO    | hybrid_travel | Loaded 360 items from data\vietnam_travel_dataset.json
+2025-10-20 11:28:47,560 | INFO    | hybrid_travel | Using embedding provider: {'provider': 'google', 'model': 'models/text-embedding-004', 'dimension': 768, 'cache_size': 225}
+2025-10-20 11:28:47,562 | INFO    | hybrid_travel | Prepared 50/360 vectors
+2025-10-20 11:28:47,562 | INFO    | hybrid_travel | Prepared 100/360 vectors
+2025-10-20 11:28:47,567 | INFO    | hybrid_travel | Prepared 150/360 vectors
+2025-10-20 11:28:47,567 | INFO    | hybrid_travel | Prepared 200/360 vectors
+2025-10-20 11:28:47,568 | INFO    | hybrid_travel | Prepared 250/360 vectors
+2025-10-20 11:28:47,569 | INFO    | hybrid_travel | Prepared 300/360 vectors
+2025-10-20 11:28:47,569 | INFO    | hybrid_travel | Prepared 350/360 vectors
+2025-10-20 11:28:50,351 | INFO    | hybrid_travel | Index already exists and matches dimension.
+2025-10-20 11:28:50,371 | INFO    | hybrid_travel | Uploading 360 vectors to Pinecone in batches of 100
+2025-10-20 11:28:53,312 | INFO    | hybrid_travel | Upserted batch 1 (100 vectors)
+2025-10-20 11:28:54,283 | INFO    | hybrid_travel | Upserted batch 2 (100 vectors)
+2025-10-20 11:28:55,123 | INFO    | hybrid_travel | Upserted batch 3 (100 vectors)
+2025-10-20 11:28:55,839 | INFO    | hybrid_travel | Upserted batch 4 (60 vectors)
+2025-10-20 11:28:56,043 | INFO    | hybrid_travel | Upload complete
+2025-10-20 11:28:56,049 | INFO    | hybrid_travel | Couldn't fetch index describe info
+2025-10-20 11:28:57,237 | INFO    | hybrid_travel | Sample query returned 5 matches
+2025-10-20 11:28:57,239 | INFO    | hybrid_travel |  - Hoi An Attraction 150 (Attraction) score=0.787571788
+2025-10-20 11:28:57,241 | INFO    | hybrid_travel |  - Hoi An Attraction 144 (Attraction) score=0.787571788
+2025-10-20 11:28:57,241 | INFO    | hybrid_travel |  - Nha Trang Attraction 215 (Attraction) score=0.781905115
+2025-10-20 11:28:57,263 | INFO    | hybrid_travel |  - Da Lat Attraction 249 (Attraction) score=0.781275749
+2025-10-20 11:28:57,263 | INFO    | hybrid_travel |  - Da Lat Attraction 248 (Attraction) score=0.781275749
+2025-10-20 11:30:53,619 | INFO    | hybrid_travel | Loaded 360 items from dataset
+2025-10-20 11:31:08,348 | INFO    | hybrid_travel | Inserted 100/360 nodes
+2025-10-20 11:31:18,537 | INFO    | hybrid_travel | Inserted 200/360 nodes
+2025-10-20 11:31:28,056 | INFO    | hybrid_travel | Inserted 300/360 nodes
