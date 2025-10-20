@@ -1,5 +1,13 @@
 # 🇻🇳 Vietnam Travel — Hybrid Retrieval Chatbot
 
+
+## Quick Start
+1. Clone: `git clone https://github.com/yourusername/vietnam-travel-hybrid-chatbot.git`
+2. Install: `pip install -r requirements.txt`
+3. Create `.env` (see below for template).
+4. Run: `python scripts/setup_neo4j.py` then `python main.py`
+
+
 ### Overview
 
 This project is a **Hybrid Travel Assistant for Vietnam** built using:
